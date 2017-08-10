@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <!--<meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">-->
-  <meta http-equiv="Content-Security-Policy" content="default-src* ;script-src'self' 'unsafe-inline' 'unsafe-eval'*;style-src 'self' 'unsafe-inline';"/>
+  <meta http-equiv="Content-Security-Policy" content="default-src * ;script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src 'self' 'unsafe-inline';"/>
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
   <link rel="stylesheet" href="components/loader.css">
@@ -17,7 +17,7 @@
     if (is_debug) {
         var BASEURL = "./debug/"; // 開発中はローカル読み込み
     } else {
-        var BASEURL = "./https://stokes309.reserve-dev.tech/api/";
+        var BASEURL = "https://stokes309.reserve-dev.tech/api/";
     }
   
     ons.ready(function() {
